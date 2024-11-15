@@ -141,7 +141,7 @@ export default function Component() {
             <Linkedin size={24} className="hover:scale-110 transform transition-transform duration-200" />
             <span className="sr-only">LinkedIn</span>
           </a>
-          <a href="mailto:shreyshriyan@gamil.com" className="hover:text-gray-300 transition-colors duration-200">
+          <a href="mailto:shreyshriyan@gmail.com" className="hover:text-gray-300 transition-colors duration-200">
             <Mail size={24} className="hover:scale-110 transform transition-transform duration-200" />
             <span className="sr-only">Email</span>
           </a>
