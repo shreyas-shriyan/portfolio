@@ -27,8 +27,8 @@ export default function Component() {
       speedY: number
 
       constructor() {
-        this.x = Math.random() * canvas.width
-        this.y = Math.random() * canvas.height
+        this.x = Math.random() * (canvas?.width ?? 0)
+        this.y = Math.random() * (canvas?.height ?? 0)
         this.size = Math.random() * 5 + 1
         this.speedX = Math.random() * 3 - 1.5
         this.speedY = Math.random() * 3 - 1.5
@@ -40,8 +40,8 @@ export default function Component() {
 
         if (this.size > 0.2) this.size -= 0.1
 
-        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1
-        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1
+        if (this.x < 0 || this.x > (canvas?.width ?? 0)) this.speedX *= -1
+        if (this.y < 0 || this.y > (canvas?.height ?? 0)) this.speedY *= -1
       }
 
       draw() {
@@ -65,7 +65,7 @@ export default function Component() {
 
     function animateParticles() {
       if (!ctx) return
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      ctx.clearRect(0, 0, (canvas?.width ?? 0), (canvas?.height ?? 0))
 
       for (let i = 0; i < particles.length; i++) {
         particles[i].update()
@@ -125,23 +125,23 @@ export default function Component() {
           Coming Soon
         </h1>
         <p className="text-xl md:text-2xl mt-2 mb-8 text-gray-300">
-          My developer portfolio is under construction.
+          My portfolio is under construction.
         </p>
         
         <div className="flex justify-center space-x-6">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors duration-200">
+          <a href="https://github.com/shreyas-shriyan" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors duration-200">
             <Github size={24} className="hover:scale-110 transform transition-transform duration-200" />
             <span className="sr-only">GitHub</span>
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors duration-200">
+          <a href="https://x.com/shreyas_shriyan" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors duration-200">
             <Twitter size={24} className="hover:scale-110 transform transition-transform duration-200" />
             <span className="sr-only">Twitter</span>
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors duration-200">
+          <a href="https://www.linkedin.com/in/shreyasshriyan/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors duration-200">
             <Linkedin size={24} className="hover:scale-110 transform transition-transform duration-200" />
             <span className="sr-only">LinkedIn</span>
           </a>
-          <a href="mailto:your.email@example.com" className="hover:text-gray-300 transition-colors duration-200">
+          <a href="mailto:shreyshriyan@gamil.com" className="hover:text-gray-300 transition-colors duration-200">
             <Mail size={24} className="hover:scale-110 transform transition-transform duration-200" />
             <span className="sr-only">Email</span>
           </a>
