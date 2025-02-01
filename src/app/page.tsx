@@ -125,7 +125,7 @@ export default function Component() {
           <img
             className="h-44 w-44 rounded-full"
             alt="profile image"
-            src="https://media.licdn.com/dms/image/v2/D5603AQF65NuIRdOO7g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731420149713?e=1736985600&v=beta&t=HSu6kffXLPSEt6jN_CZBAnHMi6RaslLvdQuMbGmRNGg"
+            src="https://media.licdn.com/dms/image/v2/D5603AQF65NuIRdOO7g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731420149713?e=1743638400&v=beta&t=ovo4VzsiFYFAaVx3ubEpMJwmd7KyePYSXM_FJiUyY-M"
           ></img>
         </div>
 
