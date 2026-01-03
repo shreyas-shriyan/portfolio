@@ -1,7 +1,9 @@
-import './style.css'
+import "./style.css";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
-   portfolio
+   <h1>Shreyas Shriyan</h1>
+   <p>Software Developer</p>
+   <p>Bangalore, India</p>
   </div>
-`
+`;
