@@ -4,6 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Shreyas's Portfolio",
   description: "Portfolio of shreyas shriyan",
+  "google-site-verification":"2Iu1tkhS3SKcnxlV7fDs7U9hAQIcVRXZyglT-fEoZgE",
 };
 
 export default function RootLayout({
