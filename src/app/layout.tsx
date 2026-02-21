@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   verification: {
     google: "2Iu1tkhS3SKcnxlV7fDs7U9hAQIcVRXZyglT-fEoZgE",
   },
+  openGraph: {
+    images: 'https://avatars.githubusercontent.com/u/51715896?v=4?s=400',
+  },
 };
 
 export default function RootLayout({
